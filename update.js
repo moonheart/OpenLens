@@ -8,5 +8,6 @@ packagejson.build.publish = [{
 }];
 
 packagejson.build.win.artifactName = "OpenLens.Setup.${version}.${ext}";
+packagejson.build.linux.target = ["AppImage"]
 
 fs.writeFileSync('package.json', JSON.stringify(packagejson));
